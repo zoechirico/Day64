@@ -13,6 +13,13 @@
 		B042900C258B9A1B00BCED8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B042900B258B9A1B00BCED8D /* Preview Assets.xcassets */; };
 		B0429018258B9A1B00BCED8D /* Day64Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0429017258B9A1B00BCED8D /* Day64Tests.swift */; };
 		B0429023258B9A1B00BCED8D /* Day64UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0429022258B9A1B00BCED8D /* Day64UITests.swift */; };
+		B042903A258B9A4300BCED8D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0429039258B9A4300BCED8D /* WidgetKit.framework */; };
+		B042903C258B9A4300BCED8D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B042903B258B9A4300BCED8D /* SwiftUI.framework */; };
+		B042903F258B9A4300BCED8D /* WidgetDay64.swift in Sources */ = {isa = PBXBuildFile; fileRef = B042903E258B9A4300BCED8D /* WidgetDay64.swift */; };
+		B0429042258B9A4500BCED8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0429041258B9A4500BCED8D /* Assets.xcassets */; };
+		B0429045258B9A4500BCED8D /* WidgetDay64.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B0429040258B9A4300BCED8D /* WidgetDay64.intentdefinition */; };
+		B0429046258B9A4500BCED8D /* WidgetDay64.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B0429040258B9A4300BCED8D /* WidgetDay64.intentdefinition */; };
+		B0429049258B9A4500BCED8D /* WidgetDay64Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0429037258B9A4300BCED8D /* WidgetDay64Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = B0429000258B9A1900BCED8D;
 			remoteInfo = Day64;
 		};
+		B0429047258B9A4500BCED8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0428FF9258B9A1900BCED8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0429036258B9A4300BCED8D;
+			remoteInfo = WidgetDay64Extension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B042904D258B9A4500BCED8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0429049258B9A4500BCED8D /* WidgetDay64Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0429001258B9A1900BCED8D /* Day64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day64.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,14 @@
 		B042901E258B9A1B00BCED8D /* Day64UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day64UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0429022258B9A1B00BCED8D /* Day64UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day64UITests.swift; sourceTree = "<group>"; };
 		B0429024258B9A1B00BCED8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0429037258B9A4300BCED8D /* WidgetDay64Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetDay64Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0429039258B9A4300BCED8D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B042903B258B9A4300BCED8D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B042903E258B9A4300BCED8D /* WidgetDay64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDay64.swift; sourceTree = "<group>"; };
+		B0429040258B9A4300BCED8D /* WidgetDay64.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetDay64.intentdefinition; sourceTree = "<group>"; };
+		B0429041258B9A4500BCED8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0429043258B9A4500BCED8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0429044258B9A4500BCED8D /* WidgetDay64.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetDay64.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0429034258B9A4300BCED8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B042903C258B9A4300BCED8D /* SwiftUI.framework in Frameworks */,
+				B042903A258B9A4300BCED8D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +124,8 @@
 				B0429003258B9A1900BCED8D /* Day64 */,
 				B0429016258B9A1B00BCED8D /* Day64Tests */,
 				B0429021258B9A1B00BCED8D /* Day64UITests */,
+				B042903D258B9A4300BCED8D /* WidgetDay64 */,
+				B0429038258B9A4300BCED8D /* Frameworks */,
 				B0429002258B9A1900BCED8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +136,7 @@
 				B0429001258B9A1900BCED8D /* Day64.app */,
 				B0429013258B9A1B00BCED8D /* Day64Tests.xctest */,
 				B042901E258B9A1B00BCED8D /* Day64UITests.xctest */,
+				B0429037258B9A4300BCED8D /* WidgetDay64Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +180,27 @@
 			path = Day64UITests;
 			sourceTree = "<group>";
 		};
+		B0429038258B9A4300BCED8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0429039258B9A4300BCED8D /* WidgetKit.framework */,
+				B042903B258B9A4300BCED8D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B042903D258B9A4300BCED8D /* WidgetDay64 */ = {
+			isa = PBXGroup;
+			children = (
+				B042903E258B9A4300BCED8D /* WidgetDay64.swift */,
+				B0429040258B9A4300BCED8D /* WidgetDay64.intentdefinition */,
+				B0429041258B9A4500BCED8D /* Assets.xcassets */,
+				B0429043258B9A4500BCED8D /* Info.plist */,
+				B0429044258B9A4500BCED8D /* WidgetDay64.entitlements */,
+			);
+			path = WidgetDay64;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +211,12 @@
 				B0428FFD258B9A1900BCED8D /* Sources */,
 				B0428FFE258B9A1900BCED8D /* Frameworks */,
 				B0428FFF258B9A1900BCED8D /* Resources */,
+				B042904D258B9A4500BCED8D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B0429048258B9A4500BCED8D /* PBXTargetDependency */,
 			);
 			name = Day64;
 			productName = Day64;
@@ -188,6 +259,23 @@
 			productReference = B042901E258B9A1B00BCED8D /* Day64UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B0429036258B9A4300BCED8D /* WidgetDay64Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B042904A258B9A4500BCED8D /* Build configuration list for PBXNativeTarget "WidgetDay64Extension" */;
+			buildPhases = (
+				B0429033258B9A4300BCED8D /* Sources */,
+				B0429034258B9A4300BCED8D /* Frameworks */,
+				B0429035258B9A4300BCED8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetDay64Extension;
+			productName = WidgetDay64Extension;
+			productReference = B0429037258B9A4300BCED8D /* WidgetDay64Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +296,9 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = B0429000258B9A1900BCED8D;
 					};
+					B0429036258B9A4300BCED8D = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = B0428FFC258B9A1900BCED8D /* Build configuration list for PBXProject "Day64" */;
@@ -226,6 +317,7 @@
 				B0429000258B9A1900BCED8D /* Day64 */,
 				B0429012258B9A1B00BCED8D /* Day64Tests */,
 				B042901D258B9A1B00BCED8D /* Day64UITests */,
+				B0429036258B9A4300BCED8D /* WidgetDay64Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0429035258B9A4300BCED8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0429042258B9A4500BCED8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0429046258B9A4500BCED8D /* WidgetDay64.intentdefinition in Sources */,
 				B0429007258B9A1900BCED8D /* ContentView.swift in Sources */,
 				B0429005258B9A1900BCED8D /* Day64App.swift in Sources */,
 			);
@@ -282,6 +383,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0429033258B9A4300BCED8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B042903F258B9A4300BCED8D /* WidgetDay64.swift in Sources */,
+				B0429045258B9A4500BCED8D /* WidgetDay64.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = B0429000258B9A1900BCED8D /* Day64 */;
 			targetProxy = B042901F258B9A1B00BCED8D /* PBXContainerItemProxy */;
+		};
+		B0429048258B9A4500BCED8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0429036258B9A4300BCED8D /* WidgetDay64Extension */;
+			targetProxy = B0429047258B9A4500BCED8D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +531,7 @@
 		B0429028258B9A1B00BCED8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Day64/Day64.entitlements;
@@ -440,6 +556,7 @@
 		B0429029258B9A1B00BCED8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Day64/Day64.entitlements;
@@ -545,6 +662,52 @@
 			};
 			name = Release;
 		};
+		B042904B258B9A4500BCED8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetDay64/WidgetDay64.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WidgetDay64/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.Day64.WidgetDay64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B042904C258B9A4500BCED8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetDay64/WidgetDay64.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WidgetDay64/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.Day64.WidgetDay64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,6 +743,15 @@
 			buildConfigurations = (
 				B042902E258B9A1B00BCED8D /* Debug */,
 				B042902F258B9A1B00BCED8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B042904A258B9A4500BCED8D /* Build configuration list for PBXNativeTarget "WidgetDay64Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B042904B258B9A4500BCED8D /* Debug */,
+				B042904C258B9A4500BCED8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
